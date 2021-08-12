@@ -1,0 +1,70 @@
+body{
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    -webkit-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+#logoSide{
+    width: 60%;
+    background-image: url(../Images/gobuybooks1.svg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x:-85px;
+    background-position-y:-100px;
+    float: left;
+    height: 1000px;
+}
+#inputSide{
+    float: right;
+    width: 40%;
+    height: 1000px;
+}
+#loginCard{
+    height: 30%;
+    width: 80%;
+    margin: 30% 10% 10% 7%;
+    padding: 4%;   
+}
+input{
+    display: block;
+    height: 60px;
+    width: 70%;
+    margin: 2% 10% 5% 15%;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid grey;
+    caret-color: transparent !important;
+}
+label{
+    margin-left: 15%;
+    color: #010326;
+    font-weight: 800;
+    font-size: larger;
+    opacity: 0.5;
+    
+}
+button{
+    margin-top: 5%;
+    margin-left: 38%;
+    height: 50px;
+    width: 120px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #010326;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 0 !important;
+}
+button:hover{
+    background-color: #f8c74e;
+    color: #010326;
+    font-weight: 900;
+}

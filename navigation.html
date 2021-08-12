@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="CSS/navigation.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap" rel="stylesheet">
+
+    <script src="js/navigation.js" defer></script>
+</head>
+<body>
+    <div id="logo">
+        <h1>GOBUYBOOKS Inventory System</h1>
+    </div>
+    <div id="mainContent">
+        <div id="sideNavigation">
+            <button id= "homebtn" class="btn active" onclick = "getID(this);" onclick="location.href='home.php';" >HOME</button>
+
+            <button id= "inventorybtn" class="btn" onclick="getID(this)" onclick="location.href='inventory.php';">INVENTORY</button>
+
+            <button class="btn">SALES</button>
+            <button class="btn">RECEIVING</button>
+            <button class="btn">CATEGORY LIST</button>
+            <button class="btn">PRODUCT LIST</button>
+            <button class="btn">SUPPLIER LIST</button>
+            <button class="btn">CUSTOMER LIST</button>
+            <button class="btn">USERS</button>
+        </div>
+        <div id="otherContent">
+            <div id="home" class="contentStyle">
+                <div class="cardHeader">
+                    <h2>Welcome back, Administrator</h2>
+                </div>
+                <div id="sales">
+                    <div id="salesHeading">
+                        <h2>Today's Sales:</h2>
+                    </div>
+                    <h2>0.00</h2>
+                </div>
+            </div>
+            <div id="inventory" class="contentStyle d-none">
+                <div>
+                    <h2>Inventory</h2>
+                </div>
+                <div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <th class="text-center">#</th>
+								<th class="text-center">Product Name</th>
+								<th class="text-center">Stock In</th>
+								<th class="text-center">Stock Out</th>
+								<th class="text-center">Stock Available</th>
+                        </thead>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
